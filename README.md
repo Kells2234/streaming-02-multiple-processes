@@ -39,14 +39,41 @@ Execute multiple_processes.py.
 Read the output. Read the code. 
 Try to figure out what's going on. 
 
-1. What libraries did we import?
-1. Where do we set the TASK_DURATION_SECONDS?
-1. How many functions are defined? 
-1. What are the function names? 
-1. In general, what does each function do? 
+1. What libraries did we import? Name and Breed
+1. Where do we set the TASK_DURATION_SECONDS? on the multiple_processes.py
+1. How many functions are defined? 7
+1. What are the function names? recreate_database, create_table, drop_table, insert_pet(process, name, breed), process_one, process_two, process_three,    
+1. In general, what does each function do? The functions manage the database and insert data into it.
 1. Where does the execution begin? Hint: generally at the end of the file.
-1. How many processes do we start?
-1. How many records does each process insert?
+if __name__ == "__main__":
+    # log some introductory information
+    logging.info(INFO_MESSAGE)
+
+    # start over with a clean database
+    recreate_database()
+
+    # define several processes
+    # to represent several users
+    # accessing the same resource
+    p1 = multiprocessing.Process(target=process_one)
+    p2 = multiprocessing.Process(target=process_two)
+    p3 = multiprocessing.Process(target=process_three)
+    
+    # start each process
+    p1.start()
+    p2.start()
+    p3.start()
+       
+    # wait for a processes to finish and rejoin the flow of execution
+    p1.join()
+    p2.join()
+    p3.join()
+    
+    # if the task duration is 0, then show the success message
+    if TASK_DURATION_SECONDS == 0:
+        logging.info(SUCCESS_MESSAGE)
+1. How many processes do we start? 3
+1. How many records does each process insert? 2
 
 In this first run, we start 3 processes, 
 each inserting 2 records into a shared database 

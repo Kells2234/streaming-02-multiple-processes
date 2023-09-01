@@ -2,18 +2,9 @@
 
 Streaming Process: Uses port 9999
 
-Create a fake stream of data. 
-Use temperature data from the batch process.
+Create a fake stream of data using the forex_fundamental_news_for_usd.csv file.  
+Use forex data from the batch process.
 
-Reverse the order of the rows to read OLDEST data first.
-
-Important! 
-
-We'll stream forever - or until we read the end of the file. 
-Use use Ctrl-C to stop. (Hit Control key and c key at the same time.)
-
-Explore more at 
-https://wiki.python.org/moin/UdpCommunication
 
 """
 
