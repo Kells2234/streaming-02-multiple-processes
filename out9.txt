@@ -1,0 +1,61 @@
+PS C:\Users\keros\.venv\streaming-02-multiple-processes> & c:/Users/keros/.venv/streaming-02-multiple-processes/.venv/Scripts/Activate.ps1
+(.venv) PS C:\Users\keros\.venv\streaming-02-multiple-processes> & c:/Users/keros/.venv/streaming-02-multiple-processes/.venv/Scripts/python.exe c:/Users/keros/.venv/streaming-02-multiple-processes/about.py
+
+======================================================================
+======================================================================
+ Welcome to the Python Debugging Information Utility ABOUT.PY
+ Date and Time: 2023-09-01 at 03:30 PM
+ Operating System: nt Windows 10
+ System Architecture: 64bit
+ Number of CPUs: 8
+ Machine Type: AMD64
+ Python Version: 3.11.4
+ Python Build Date and Compiler: tags/v3.11.4:d2340ef with Jun  7 2023 05:45:37
+ Python Implementation: CPython
+ Active pip environment: None
+ Path to Interpreter:         C:\Users\keros\.venv\streaming-02-multiple-processes\.venv\Scripts\python.exe
+ Path to virtual environment: C:\Users\keros\.venv\streaming-02-multiple-processes\.venv
+ Current Working Directory:   C:\Users\keros\.venv\streaming-02-multiple-processes
+ Path to source directory:    c:\Users\keros\.venv\streaming-02-multiple-processes
+ Path to script file:         c:\Users\keros\.venv\streaming-02-multiple-processes\about.py
+ User's Home Directory:       C:\Users\keros
+ Terminal Environment:        VS Code
+ Terminal Type:               cmd.exe
+ Git available in PATH:       True
+======================================================================
+======================================================================
+
+(.venv) PS C:\Users\keros\.venv\streaming-02-multiple-processes> & c:/Users/keros/.venv/streaming-02-multiple-processes/.venv/Scripts/python.exe c:/Users/keros/.venv/streaming-02-multiple-processes/process_streaming_kellysimmons.py
+2023-09-01 16:23:27,356 - INFO - ===============================================
+2023-09-01 16:23:27,356 - INFO - Starting fake streaming process.
+2023-09-01 16:23:27,356 - INFO - Starting to stream data from forex_fundamental_news_for_usd.csv to ('localhost', 9999).
+2023-09-01 16:23:27,361 - INFO - Opened for reading: forex_fundamental_news_for_usd.csv.
+2023-09-01 16:23:27,363 - INFO - Skipped header row: ['Date', 'ISM Manufacturing PMI', 'ISM Services PMI', 'Housing Starts', 'Non-Farm Employment Change', 'Unemployment  Rate', 'Consumer Price Index (CPI)', 'Producer Price Index (PPI)', 'Retail Sales']
+2023-09-01 16:23:27,367 - INFO - Sent: b"[Feb-10, 58.4, 50.5, 0.59M, -20K, ('9.70%', '0.20%'), 1.40%, 0.50%]" on port 9999. Hit CTRL-c to stop.
+2023-09-01 16:23:30,368 - INFO - Sent: b"[Mar-10, 56.5, 53, 0.58M, -36K, ('9.70%', '0.00%'), -0.60%, 0.30%]" on port 9999. Hit CTRL-c to stop.
+2023-09-01 16:23:33,369 - INFO - Sent: b"[Apr-10, 59.6, 55.4, 0.63M, 162K, ('9.70%', '0.10%'), 0.70%, 1.60%]" on port 9999. Hit CTRL-c to stop.
+2023-09-01 16:23:36,370 - INFO - Sent: b"[May-10, 60.4, 55.4, 0.67M, 290K, ('9.90%', '-0.10%'), -0.10%, 0.40%]" on port 9999. Hit CTRL-c to stop.
+2023-09-01 16:23:39,371 - INFO - Sent: b"[Jun-10, 59.7, 55.4, 0.59M, 431K, ('9.70%', '-0.20%'), -0.30%, -1.20%]" on port 9999. Hit CTRL-c to stop.
+2023-09-01 16:23:42,372 - INFO - Sent: b"[Jul-10, 56.2, 53.8, 0.55M, -125K, ('9.50%', '-0.10%'), -0.50%, -0.50%]" on port 9999. Hit CTRL-c to stop.
+2023-09-01 16:23:45,373 - INFO - Sent: b"[Aug-10, 55.5, 54.3, 0.55M, -131K, ('9.50%', '0.30%'), 0.20%, 0.40%]" on port 9999. Hit CTRL-c to stop.
+2023-09-01 16:23:48,374 - INFO - Sent: b"[Sep-10, 56.3, 51.5, 0.60M, -54K, ('9.60%', '0.30%'), 0.40%, 0.40%]" on port 9999. Hit CTRL-c to stop.
+2023-09-01 16:30:39,517 - INFO - Sent: b"[Feb-22, 57.6, 59.9, 1.64M, 467K, ('4.00%', '0.60%'), 1.00%, 3.80%]" on port 9999. Hit CTRL-c to stop.
+2023-09-01 16:30:42,518 - INFO - Sent: b"[Mar-22, 58.6, 56.5, 1.77M, 678K, ('3.80%', '0.80%'), 0.80%, 0.30%]" on port 9999. Hit CTRL-c to stop.
+2023-09-01 16:30:45,520 - INFO - Sent: b"[Apr-22, 57.1, 58.3, 1.79M, 431K, ('3.60%', '1.20%'), 1.40%, 0.50%]" on port 9999. Hit CTRL-c to stop.
+2023-09-01 16:30:48,521 - INFO - Sent: b"[May-22, 55.4, 57.1, 1.72M, 428K, ('3.60%', '0.30%'), 0.50%, 0.90%]" on port 9999. Hit CTRL-c to stop.
+2023-09-01 16:30:51,522 - INFO - Sent: b"[Jun-22, 56.1, 55.9, 1.55M, 390K, ('3.60%', '1.00%'), 0.80%, -0.30%]" on port 9999. Hit CTRL-c to stop.
+2023-09-01 16:30:54,523 - INFO - Sent: b"[Jul-22, 53, 55.3, 1.56M, 372K, ('3.60%', '1.30%'), 1.10%, 1.00%]" on port 9999. Hit CTRL-c to stop.
+2023-09-01 16:30:57,524 - INFO - Sent: b"[Aug-22, 52.8, 56.7, 1.45M, 528K, ('3.50%', '0.00%'), -0.50%, 0.00%]" on port 9999. Hit CTRL-c to stop.
+2023-09-01 16:31:00,525 - INFO - Sent: b"[Sep-22, 52.8, 56.9, 1.58M, 315K, ('3.70%', '0.10%'), -0.10%, 0.30%]" on port 9999. Hit CTRL-c to stop.
+2023-09-01 16:31:03,526 - INFO - Sent: b"[Oct-22, 50.9, 56.7, 1.44M, 263K, ('3.50%', '0.40%'), 0.40%, 0.00%]" on port 9999. Hit CTRL-c to stop.
+2023-09-01 16:31:06,527 - INFO - Sent: b"[Nov-22, 50.2, 54.4, 1.43M, 261K, ('3.70%', '0.40%'), 0.20%, 1.30%]" on port 9999. Hit CTRL-c to stop.
+2023-09-01 16:31:09,528 - INFO - Sent: b"[Dec-22, 49, 56.5, 1.43M, 263K, ('3.70%', '0.10%'), 0.30%, -0.60%]" on port 9999. Hit CTRL-c to stop.
+2023-09-01 16:31:12,529 - INFO - Sent: b"[Jan-23, 48.4, 49.6, 1.38M, 223K, ('3.50%', '-0.10%'), -0.50%, -1.10%]" on port 9999. Hit CTRL-c to stop.
+2023-09-01 16:31:15,530 - INFO - Sent: b"[Feb-23, 47.4, 55.2, 1.31M, 517K, ('3.40%', '0.50%'), 0.70%, 3.00%]" on port 9999. Hit CTRL-c to stop.
+2023-09-01 16:31:18,531 - INFO - Sent: b"[Mar-23, 47.7, 55.1, 1.45M, 311K, ('3.60%', '0.40%'), -0.10%, -0.40%]" on port 9999. Hit CTRL-c to stop.
+2023-09-01 16:31:21,532 - INFO - Sent: b"[Apr-23, 46.3, 51.2, 1.42M, 236K, ('3.50%', '0.10%'), -0.50%, -1.00%]" on port 9999. Hit CTRL-c to stop.
+2023-09-01 16:31:24,533 - INFO - Sent: b"[May-23, 47.1, 51.9, 1.40M, 253K, ('3.40%', '0.40%'), 0.20%, 0.40%]" on port 9999. Hit CTRL-c to stop.
+2023-09-01 16:31:27,534 - INFO - Sent: b"[Jun-23, 46.9, 50.3, 1.63M, 339K, ('3.70%', '0.10%'), -0.30%, 0.30%]" on port 9999. Hit CTRL-c to stop.
+2023-09-01 16:31:30,536 - INFO - Streaming complete!
+2023-09-01 16:31:30,537 - INFO - ===============================================
+(.venv) PS C:\Users\keros\.venv\streaming-02-multiple-processes>
